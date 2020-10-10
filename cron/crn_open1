@@ -1,0 +1,6 @@
+# /etc/cron.d/sync2
+
+SHELL=/bin/sh
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+
+15,45 * * * *   root	cd /srv/integration/sync && ./importOpen1.sh >> /var/log/sync2.log

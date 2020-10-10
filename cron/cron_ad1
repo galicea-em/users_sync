@@ -1,0 +1,5 @@
+
+SHELL=/bin/sh
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+
+25 22 * * *   root	cd /srv/integration/sync && ./usos2ad_sync.sh >> /var/log/sync4.log
